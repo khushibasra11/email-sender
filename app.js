@@ -40,8 +40,8 @@ app.get('/', (req, res) => {
       port: 587,
       // true for 465, false for other ports
       auth: {
-          user: 'marion.brekke@ethereal.email', // generated ethereal user
-          pass: 'ZEXPWxEUxZYrXVUHPK'  // generated ethereal password
+          user: 'example@ethereal.email', // generated ethereal user
+          pass: ''  // generated ethereal password
       },
       tls:{
         rejectUnauthorized:false
@@ -51,7 +51,7 @@ app.get('/', (req, res) => {
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"Nodemailer Contact" <marion.brekke@ethereal.email>', // sender address
-        to: 'nirmalbasra18@gmail.com', // list of receivers
+        to: '', // list of receivers
         subject: 'Node Contact Request', // Subject line
         text: 'Hello world?', // plain text body
         html: output // html body
